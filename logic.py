@@ -184,3 +184,12 @@ def remove_spending (user_id, index):
     db.session.commit()
     
     return True
+
+def list_accounts():
+    accounts = db.session.query(Account).all()
+    return accounts
+
+def check_admin(user_id):
+    admins = [895668138]
+
+    return user_id in admins
