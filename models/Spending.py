@@ -1,4 +1,4 @@
-iimport database.db as db
+import database.db as db
 from sqlalchemy import Column, Integer, String, Float, Date, DateTime, ForeignKey, func
 from sqlalchemy.orm import relationship
 
