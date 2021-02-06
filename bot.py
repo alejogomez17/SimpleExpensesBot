@@ -100,7 +100,8 @@ def on_list_earnings(message):
 
     parts = re.match(
         r"^(listar ganancias|lg) en ([0-9]{1,2}) de ([0-9]{4})$",
-        message.text)
+        message.text,
+        re.IGNORECASE)
 
     month = int(parts[2])
     year = int(parts[3])
@@ -138,7 +139,8 @@ def on_list_spendings(message):
 
     parts = re.match(
         r"^(listar gastos|lgg) en ([0-9]{1,2}) de ([0-9]{4})$",
-        message.text)
+        message.text,
+        re.IGNORECASE)
 
     month = int(parts[2])
     year = int(parts[3])
